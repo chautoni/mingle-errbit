@@ -87,6 +87,8 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
+gem 'messagebus-sdk'
+
 group :development do
   gem 'capistrano', '~> 2.0', :require => false
   gem 'rvm-capistrano'
