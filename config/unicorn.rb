@@ -2,10 +2,11 @@
 APP_PATH = "/var/www/apps/errbit/current"
 working_directory APP_PATH
 
-stderr_path APP_PATH + "/log/unicorn.stderr.log"
-stdout_path APP_PATH + "/log/unicorn.stderr.log"
+stderr_path "#{APP_PATH}/log/unicorn.stderr.log"
+stdout_path "#{APP_PATH}/log/unicorn.stderr.log"
 
-pid APP_PATH + "/tmp/pids/unicorn.pid"
+pid "#{APP_PATH}/tmp/pids/unicorn.pid"
+listen "#{APP_PATH}/tmp/sockets/unicorn.sock"
 
 worker_processes 3 # amount of unicorn workers to spin up
 timeout 30         # restarts workers that hang for 30 seconds
