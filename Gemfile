@@ -90,6 +90,7 @@ end
 group :development do
   gem 'capistrano', '~> 2.0', :require => false
   gem 'rvm-capistrano'
+  gem 'capistrano-unicorn'
 
   # better errors
   gem 'better_errors'
